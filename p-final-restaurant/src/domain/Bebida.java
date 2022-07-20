@@ -8,9 +8,8 @@ public class Bebida extends Consumible{
 	private Double tamanioCc;
 	private Boolean alcohol;
 	
-	public Bebida(List<Consumible> consumibles, String tipoMenu, String nombre, Double precio, Double tamanioCc,
-			Boolean alcohol) {
-		super(consumibles, tipoMenu, nombre, precio);
+	public Bebida(String nombre, Double precio, Double tamanioCc, Boolean alcohol) {
+		super(nombre, precio);
 		this.tamanioCc = tamanioCc;
 		this.alcohol = alcohol;
 	}
@@ -31,6 +30,7 @@ public class Bebida extends Consumible{
 		this.alcohol = alcohol;
 	}
 	
+
 
 
 }

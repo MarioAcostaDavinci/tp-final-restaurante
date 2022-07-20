@@ -2,6 +2,7 @@ package domain;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class salon {
 	
@@ -49,6 +50,7 @@ public class salon {
 	public void setComandas(List<Comanda> comandas) {
 		this.comandas = comandas;
 	}
-	
+
+
 
 }
