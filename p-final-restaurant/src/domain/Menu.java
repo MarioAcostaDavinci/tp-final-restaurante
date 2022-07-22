@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Menu {
 
-	List<Consumible> consumibles = new ArrayList<Consumible>();
+	private static List<Consumible> consumibles = new ArrayList<Consumible>();
 	
 	private String tipoMenu;
 
@@ -15,7 +15,7 @@ public class Menu {
 		this.tipoMenu = tipoMenu;
 	}
 
-	public List<Consumible> getConsumibles() {
+	public static List<Consumible> getConsumibles() {
 		return consumibles;
 	}
 

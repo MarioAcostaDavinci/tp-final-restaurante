@@ -29,7 +29,16 @@ public class Bebida extends Consumible{
 	public void setAlcohol(Boolean alcohol) {
 		this.alcohol = alcohol;
 	}
+
+	public void setBebida(String nombre, Double precio, Double tamanioCc, Boolean alcohol) {
+		nombre=nombre;
+		precio=precio;
+		this.tamanioCc=tamanioCc;
+		this.alcohol=alcohol;
+		
+	}
 	
+
 
 
 
