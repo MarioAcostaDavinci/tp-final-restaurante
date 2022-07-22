@@ -28,6 +28,20 @@ public class ConsumibleService {
 		}
 		return null;
 	}
+	
+	public Consumible buscarConsumibleXnombre(String nombre) {
+		
+		for(Consumible consumible:Menu.getConsumibles()) {
+		if(consumible!=null && consumible.getNombre().equalsIgnoreCase(nombre)) {
+			return  consumible ;
+		}
+		}
+		return null;
+	
+	}
+	
+	
+	
 	public void crearPlato(String nombre,Double precio,String descripcion,Boolean aptoVegano,Boolean aptoCeliaco,List<Consumible> consumibles) {
 		for(Consumible plato:Menu.getConsumibles()) {
 			if(plato!=null) {

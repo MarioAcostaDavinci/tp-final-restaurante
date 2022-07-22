@@ -6,8 +6,8 @@ public class Plato extends Consumible{
 	
 
 	private String descripcion;
-	private Boolean aptoVegano;
-	private Boolean aptoCeliaco;
+	private static Boolean aptoVegano;
+	private static Boolean aptoCeliaco;
 	
 
 	public Plato(String nombre, Double precio, String descripcion, Boolean aptoVegano, Boolean aptoCeliaco) {
@@ -27,7 +27,7 @@ public class Plato extends Consumible{
 		this.descripcion = descripcion;
 	}
 
-	public Boolean getAptoVegano() {
+	public static Boolean getAptoVegano() {
 		return aptoVegano;
 	}
 
@@ -35,7 +35,7 @@ public class Plato extends Consumible{
 		this.aptoVegano = aptoVegano;
 	}
 
-	public Boolean getAptoCeliaco() {
+	public static Boolean getAptoCeliaco() {
 		return aptoCeliaco;
 	}
 

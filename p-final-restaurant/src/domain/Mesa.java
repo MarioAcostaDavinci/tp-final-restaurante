@@ -4,13 +4,13 @@ public class Mesa {
 	
 	private Integer numero;
 	private Integer cantidadDeComensales;
-	private Boolean estado;
+	private Boolean ocupado;
 	
-	public Mesa(Integer numero, Integer cantidadDeComensales, Boolean estado){
+	public Mesa(Integer numero, Integer cantidadDeComensales){
 		
 		this.numero = numero;
 		this.cantidadDeComensales = cantidadDeComensales;
-		this.estado = estado;
+		this.ocupado = false;
 		
 	}
 	
@@ -26,14 +26,20 @@ public class Mesa {
 	public void setCantidadDeComensales(Integer cantidadDeComensales) {
 		this.cantidadDeComensales = cantidadDeComensales;
 	}
-	public Boolean getEstado() {
-		return estado;
+	public Boolean getOcupado() {
+		return ocupado;
+	}
+	public boolean isOcupado() {
+		return (ocupado != null) ? ocupado : false;
 	}
 	
-	public void setEstado(Boolean estado) {
-		this.estado = estado;
+	public void setOcupado(Boolean estado) {
+		this.ocupado = ocupado;
 	}
-	
+	@Override
+	public String toString() {
+		return "Mesa [numero=" + numero + ", cantidadComensales=" + cantidadDeComensales + ", ocupado=" + ocupado + "]";
+	}
 	
 	
 	
