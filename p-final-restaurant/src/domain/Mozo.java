@@ -1,14 +1,14 @@
 package domain;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 public class Mozo extends Empleado{
 	
 
-	protected String tipoDeMozo;
+	private String tipoDeMozo;
 	
-	List <Mesa> mesas = new ArrayList<Mesa>();
+	private List <Mesa> mesas ;
 
 	public Mozo(String nombre, Integer legajo, String fechaDeIngreso, String tipoDeMozo, List<Mesa> mesas) {
 		super(nombre, legajo, fechaDeIngreso);
@@ -31,6 +31,26 @@ public class Mozo extends Empleado{
 	public void setMesas(List<Mesa> mesas) {
 		this.mesas = mesas;
 	}
+
+	@Override
+	public void setMozo(String nombre, Integer legajo, String fechaDeIngreso, String tipoDeMozo, List<Mesa> mesas) {
+		
+		
+	}
+
+	@Override
+	public void SetCocinero(String nombre, Integer legajo, String fechaDeIngreso, Integer yearsDeExperiencia) {
+	
+		
+	}
+
+	@Override
+	public String toString() {
+		return " nombre: " + getNombre() + "| nro de legajo: " + getLegajo() + "| Fecha de ingreso: "
+				+ getFechaDeIngreso() + "\n";
+	}
+
+	
 	
 	
 	

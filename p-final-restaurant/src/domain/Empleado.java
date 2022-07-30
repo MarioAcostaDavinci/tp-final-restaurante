@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.List;
+
 public abstract class Empleado {
 	
 	private String Nombre;
@@ -37,7 +39,9 @@ public abstract class Empleado {
 		this.fechaDeIngreso = fechaDeIngreso;
 	}
 	
-	
-	
+	public abstract void setMozo(String nombre, Integer legajo, String fechaDeIngreso, String tipoDeMozo, List<Mesa> mesas);
 
+	public abstract void SetCocinero(String nombre, Integer legajo, String fechaDeIngreso, Integer yearsDeExperiencia);
+	
+	
 }

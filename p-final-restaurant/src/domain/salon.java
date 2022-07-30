@@ -2,32 +2,32 @@ package domain;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
-public class salon {
+
+public class Salon {
 	
-	List<Menu> menus = new ArrayList<Menu>();
-	List<Mesa> mesas = new ArrayList<Mesa>();
-	List<Empleado> empleados = new ArrayList<Empleado>();
-	List<Comanda> comandas = new ArrayList<Comanda>();
+	static List<Menu> menues = new ArrayList<Menu>();
+	static List<Mesa> mesas = new ArrayList<Mesa>();
+	static List<Empleado> empleados = new ArrayList<Empleado>();
+	static List<Comanda> comandas = new ArrayList<Comanda>();
 
-	public salon(List<Menu> menus, List<Mesa> mesas, List<Empleado> empleados, List<Comanda> comandas) {
+	public Salon(List<Menu> menues, List<Mesa> mesas, List<Empleado> empleados, List<Comanda> comandas) {
 		super();
-		this.menus = menus;
+		this.menues = menues;
 		this.mesas = mesas;
 		this.empleados = empleados;
 		this.comandas = comandas;
 	}
 
-	public List<Menu> getMenus() {
-		return menus;
+	public static List<Menu> getMenues() {
+		return menues;
 	}
 
-	public void setMenus(List<Menu> menus) {
-		this.menus = menus;
+	public void setMenues(List<Menu> menues) {
+		this.menues = menues;
 	}
 
-	public List<Mesa> getMesas() {
+	public static List<Mesa> getMesas() {
 		return mesas;
 	}
 
@@ -35,15 +35,15 @@ public class salon {
 		this.mesas = mesas;
 	}
 
-	public List<Empleado> getEmpleados() {
+	public static List<Empleado> getEmpleados() {
 		return empleados;
 	}
 
-	public void setEmpleados(List<Empleado> empleados) {
-		this.empleados = empleados;
+	public static void setEmpleados(List<Empleado> empleados) {
+		Salon.empleados = empleados;
 	}
 
-	public List<Comanda> getComandas() {
+	public static List<Comanda> getComandas() {
 		return comandas;
 	}
 
