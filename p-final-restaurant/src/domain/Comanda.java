@@ -1,8 +1,8 @@
 package domain;
 
-import java.util.ArrayList;
+
 import java.util.List;
-import java.util.Objects;
+
 
 public class Comanda {
 	
@@ -74,7 +74,7 @@ public class Comanda {
 
 	@Override
 	public String toString() {
-		return "| lista de platos y bebidas:\n" + consumidos + "\n| numero de mesa: " + mesa + "| mozo: " + mozo
+		return "| lista de platos y bebidas:\n" + consumidos + "\n| mesa: " + mesa + "| mozo: " + mozo
 				+ "| cocinero: " + cocinero + "| formaDePago: " + formaDePago + "\n";
 	}
 

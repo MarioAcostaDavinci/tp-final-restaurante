@@ -12,7 +12,7 @@ public class MenuService {
 		return new ArrayList<Consumible>();
 	}
 	
-	public Menu crear(String tipoMenu,List<Consumible> consumibles) {
+	public Menu crear(String tipoMenu, List<Consumible> consumibles) {
 			return new Menu(consumibles,tipoMenu);
 	}
 	

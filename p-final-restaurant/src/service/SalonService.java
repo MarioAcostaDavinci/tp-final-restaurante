@@ -70,9 +70,7 @@ public class SalonService {
 				comandaMaxima=comanda;		
 			}	
 		}
-		System.out.println(" La comanda con mayor cantidad de consumibles es: \n "+ comandaMaxima+" con :"+cantidadMax+" pedidos");
+		System.out.println(" La comanda con mayor cantidad de consumibles es: \n "+ comandaMaxima+" con: "+cantidadMax+" pedidos.");
 	
-		
 	}
-
 }

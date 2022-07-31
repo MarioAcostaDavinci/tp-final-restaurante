@@ -41,16 +41,16 @@ public class MesaService {
 				mesaDesOcupada=true;
 			}
 				}
-		if(mesaDesOcupada==false) {
-			System.out.println("no hay mesas disponibles...");
-		}
-		
 		if(mozo.getMesas().contains(comanda.getMesa()) && mesa.getOcupado()==false) {
 			System.out.println("El mozo esta tomando su pedido...por favor aguarde.");
 			service.ingresarPedidoAlSistema(comanda);
 			mesa.setOcupado(true);
 		}else {
-			System.out.println("su pedido no pude ser realizado.");
+			if(mesaDesOcupada==false) {
+				System.out.println("no hay mesas disponibles...");
+			}else {
+			System.out.println("su pedido no pudo ser ingresado por favor verifique los datos...");
+			}
 		}	
 	}
 	public void mostrar(Mesa mesa) {

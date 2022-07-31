@@ -111,13 +111,8 @@ public class ComandaService implements Descuentos {
 				str.append("Forma de pago:");
 				str.append(comandas.getFormaDePago());
 				str.append("\n");
-				System.out.println(str.toString());
-			
-			
-			
-			
+				System.out.println(str.toString());		
 			}
 	}
-	
 	}
 }
